@@ -1,0 +1,1 @@
+json.extract! rating, :id, :user_id, :house_id, :overall_score, :review, :created_at, :user, :house

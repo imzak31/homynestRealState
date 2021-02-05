@@ -1,0 +1,1 @@
+json.extract! reservation, :id, :house_id, :user_id, :party, :time, :date, :house

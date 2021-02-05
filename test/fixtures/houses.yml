@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  adress: MyString
+  sqm: MyString
+  state: MyString
+  zip: MyString
+  price: MyString
+  type: 
+  open_time: 2021-02-04 20:06:59
+  close_time: 2021-02-04 20:06:59
+  phone_number: MyString
+  description: MyString
+
+two:
+  name: MyString
+  adress: MyString
+  sqm: MyString
+  state: MyString
+  zip: MyString
+  price: MyString
+  type: 
+  open_time: 2021-02-04 20:06:59
+  close_time: 2021-02-04 20:06:59
+  phone_number: MyString
+  description: MyString

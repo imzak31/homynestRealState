@@ -1,0 +1,111 @@
+.form-box {
+    background: white;
+    width: 415px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    border-radius: 5px;
+}
+
+input.form-button {
+    color: #fff;
+    /* width: 90%; */
+    margin: 8px;
+    background-color: #da3743;
+    border-color: #b8222d;
+    border-style: solid;
+    cursor: pointer;
+    /* font-family: sans-serif; */
+    font-weight: 500;
+    border-width: 0;
+    line-height: normal;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    outline: 0;
+    border-radius: 3px;
+    display: inline-block;
+    height: 45px;
+}
+
+input.form-button:hover{
+    cursor: pointer;
+    opacity: 0.80;
+}
+
+input.form-input::-webkit-input-placeholder{
+    padding-left: 2px;
+}
+
+input.form-input {
+    outline: 0;
+    font-weight: 500;
+    display: block;
+    background: white;
+    font-size: .875rem;
+    border: 1px solid lightgray;
+    /* width: 90%; */
+    height: 25px;
+    padding: 4px 4px 4px 7px;
+    margin-bottom: 10px;
+    margin: 8px;
+    
+}
+input.form-error-input {
+    outline: 0;
+    font-weight: 500;
+    display: block;
+    background: white;
+    font-size: .875rem;
+    border: 1px solid red;
+    /* width: 90%; */
+    height: 25px;
+    padding: 4px;
+    margin-bottom: 10px;
+    margin: 8px;
+}
+
+.close-x {
+    color: gray;
+    background-color: transparent;
+    border: none;
+    align-self: flex-end;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+hr {
+    border: 1px solid lightgray;
+    border-width: 1px 0 0;
+    clear: both;
+    margin: .5rem 0;
+    height: 0;
+}
+
+h2.form-title {
+    /* font-size: 100%; */
+    /* margin: 8px; */
+    font-size: 24px;
+    padding: 10px 12px 10px 8px;
+    width: 95%;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 12px;
+    
+}
+
+
+ul.error-messsages {
+    padding: 4px;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 380px;
+}
+
+.error-message{
+    color: red;
+    list-style-type: none;
+    margin-left: 15px;
+}
+
