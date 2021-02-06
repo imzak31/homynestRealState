@@ -166,7 +166,7 @@ class HouseShow extends React.Component{
                 </div>
                 <div className="home-full-address">
                   <i className="fas fa-map-marker-alt"></i>
-                  <span>{house.address} {house.sqm}, {house.state} {house.zip}</span>
+                  <span>{house.adress} {house.sqm}, {house.state} {house.zip}</span>
                 </div>
               </div>
 

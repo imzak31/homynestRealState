@@ -42,7 +42,7 @@ class ReservationIndexItem extends React.Component {
           <div className="res-info">Time: {resTime}:00 pm</div>
           <div className="res-info">Party: {this.props.reservation.party}</div>
           <div className="res-location">
-            <i className="fas fa-map-marker-alt"></i>{this.props.reservation.house.address},{" "} {this.props.reservation.house.type}
+            <i className="fas fa-map-marker-alt"></i>{this.props.reservation.house.adress},{" "} {this.props.reservation.house.type}
           </div>
           <button
             className="red-btn"

@@ -1,5 +1,5 @@
 class House < ApplicationRecord
-    validates :name, :address, :sqm, :state, :zip, :price,:sort,:open_time,:close_time, :phone_number, :description, presence: true
+    validates :name, :adress, :sqm, :state, :zip, :price,:sort,:open_time,:close_time, :phone_number, :description, presence: true
 
       #associations 
       has_many :reservations,
