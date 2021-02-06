@@ -11,7 +11,7 @@ const SQM = [
   "300sqm"
 ]
 
-const TYPE = [
+const SORT = [
   "Houses",
   "Apartments",
   "Hotels",
@@ -37,7 +37,7 @@ class Filter extends React.Component {
     // this.state = { searchFilter: props.history.location.state ? props.history.location.state.search : [], };
     this.state = {
       price: [],
-      types: props.location.state ? [props.location.state.type] : [],
+      sorts: props.location.state ? [props.location.state.sort] : [],
       locations:
         props.location.state && props.location.state.sqm
           ? [props.location.state.sqm]
@@ -47,8 +47,8 @@ class Filter extends React.Component {
 
     this.handleChangeSqm = this.handleChangeSqm.bind(this);
     this.filterBuilderSqm = this.filterBuilderSqm.bind(this);
-    this.handleChangeType = this.handleChangeType.bind(this);
-    this.filterBuilderType = this.filterBuilderType.bind(this);
+    this.handleChangeSort = this.handleChangeSort.bind(this);
+    this.filterBuilderSort = this.filterBuilderSort.bind(this);
     this.handleClickPrice = this.handleClickPrice.bind(this);
     this.filterBuilderPrice = this.filterBuilderPrice.bind(this);
   }
@@ -63,7 +63,7 @@ class Filter extends React.Component {
     this.props.searchHouses({
       price: this.state.price,
       sqm: this.state.locations,
-      types: this.state.type,
+      Sorts: this.state.Sort,
       // name: this.state.name,
     });
   }
@@ -73,7 +73,7 @@ class Filter extends React.Component {
       <div className="filter-item-div" key={i}>
         <input
           className="filter-checkbox"
-          type="checkbox"
+          Sort="checkbox"
           value={c}
           onChange={this.handleChangeSqm}
           checked={this.state.locations.includes(c) ? "checked" : ""}
@@ -84,20 +84,20 @@ class Filter extends React.Component {
     return sqmFilter;
   }
 
-  filterBuilderType() {
-    let typeFilter = TYPE.map((c, i) => (
+  filterBuilderSort() {
+    let SortFilter = Sort.map((c, i) => (
       <div className="filter-item-div" key={i}>
         <input
           className="filter-checkbox"
-          type="checkbox"
+          Sort="checkbox"
           value={c}
-          onChange={this.handleChangeType}
-          checked={this.state.types.includes(c) ? "checked" : ""}
+          onChange={this.handleChangeSort}
+          checked={this.state.Sorts.includes(c) ? "checked" : ""}
         />
         <label className="filter-label">{c}</label>
       </div>
     ));
-    return typeFilter;
+    return SortFilter;
   }
 
   filterBuilderPrice() {
@@ -149,20 +149,20 @@ class Filter extends React.Component {
     }
   }
 
-  handleChangeType(e) {
+  handleChangeSort(e) {
     e.preventDefault();
-    let type = e.target.value;
+    let Sort = e.target.value;
 
-    if (this.state.types.indexOf(type) === -1) {
+    if (this.state.Sorts.indexOf(Sort) === -1) {
       this.setState(
         {
-          types: [...this.state.types, type],
+          Sorts: [...this.state.Sorts, Sort],
         },
         () => this.sendSearch()
       );
     } else {
       this.setState(
-        { types: this.state.types.filter((p) => p != type) },
+        { Sorts: this.state.Sorts.filter((p) => p != Sort) },
         () => this.sendSearch()
       );
     }
@@ -207,9 +207,9 @@ class Filter extends React.Component {
 
           <div className="filter-option">
             <h5>
-              <i className="fas fa-utensils"></i> Type
+              <i className="fas fa-utensils"></i> Sort
             </h5>
-            {this.filterBuilderType()}
+            {this.filterBuilderSort()}
           </div>
         </section>
       </div>

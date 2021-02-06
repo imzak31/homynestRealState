@@ -145,7 +145,7 @@ class HouseShow extends React.Component{
             <div onClick={() => this.props.history.push({ pathname: "/houses", state: { sqm: house.sqm}})} className="crumb-link">{house.sqm}</div>
           </li>
           <li className="crumb">
-            <div onClick={() => this.props.history.push({ pathname: "/houses", state: { type: house.type }})} className="crumb-link">{house.type}</div>
+            <div onClick={() => this.props.history.push({ pathname: "/houses", state: { sort: house.sort }})} className="crumb-link">{house.sort}</div>
           </li>
         </ol >
         <div className="house-show-header">
@@ -187,8 +187,8 @@ class HouseShow extends React.Component{
 
 
                 <div className="house-info-box">
-                  <div className="box-head"><i className="fas fa-utensils"></i>Type</div>
-                  <div className="box-description"> {house.type}</div>
+                  <div className="box-head"><i className="fas fa-utensils"></i>sort</div>
+                  <div className="box-description"> {house.sort}</div>
                 </div>
               </div>
             </div>
@@ -211,8 +211,8 @@ class HouseShow extends React.Component{
                     <div className="overview-price">
                       <div><i className="far fa-money-bill-alt"></i> {moneyCheck} </div>
                     </div>
-                      <div className="overview-type">
-                    <div><i className="fas fa-utensils"></i> {house.type}</div>
+                      <div className="overview-sort">
+                    <div><i className="fas fa-utensils"></i> {house.sort}</div>
                   </div>
                 </div>
               </div>

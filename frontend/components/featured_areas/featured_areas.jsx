@@ -16,39 +16,15 @@ class FeaturedAreas extends React.Component{
     handleClick(e){
         e.preventDefault();
 
-        let cityValue = e.target.id.split("_").map(i => i[0].toUpperCase() + i.slice(1)).join(' ');
+        let sqmValue = e.target.id.split("_").map(i => i[0].toUpperCase() + i.slice(1)).join(' ');
         this.props.history.push({
           pathname: "/houses",
-          state: { city: cityValue },
+          state: { sqm: sqmValue },
         });
     }
 
     render( ) {
-        return (
-            <div className="areas">
-                <h1>Featured Areas</h1>
-                <div className="area-list">
-                    <div className="fcity" id="san_francisco" onClick={this.handleClick}>
-                        San Francisco
-                    </div>
-                    <div className="fcity" id="los_angeles" onClick={this.handleClick}>
-                        Los Angeles
-                    </div>
-                    <div className="fcity" id="new_york" onClick={this.handleClick}>
-                        New York
-                    </div>
-                    <div className="fcity" id="las_vegas" onClick={this.handleClick}>
-                        Las Vegas
-                    </div>
-                    <div className="fcity" id="chicago" onClick={this.handleClick}>
-                        Chicago
-                    </div>
-                    <div className="fcity" id="seattle" onClick={this.handleClick}>
-                        Seattle
-                    </div>
-                </div>
-            </div>
-        )
+
     }
 }
 

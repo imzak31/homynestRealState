@@ -29,7 +29,7 @@ const searches = [
     ],
   },
   {
-    title: "Types",
+    title: "Sorts",
     searches: [
       {
         name: "Houses",
@@ -67,7 +67,7 @@ const searches = [
 ];
 
 
-const CITY = [
+const SQM = [
   "50sqm",
   "100sqm",
   "150sqm",
@@ -76,7 +76,7 @@ const CITY = [
   "300sqm",
 ];
 
-const CUISINE = [
+const SORT = [
   "House",
   "Apartments",
   "Hotels",
@@ -166,8 +166,8 @@ class Search extends React.Component {
     e.preventDefault();
     
     let nextState;
-    if (CITY.includes(this.state.value)) {
-      nextState = { city: this.state.value };
+    if (SQM.includes(this.state.value)) {
+      nextState = { sqm: this.state.value };
     } else if (CUISINE.includes(this.state.value)) {
       nextState = { cuisine: this.state.value };
     } 

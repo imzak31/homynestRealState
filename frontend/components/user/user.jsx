@@ -60,7 +60,7 @@ class UserProfile extends React.Component {
                       {favorite.house.name} 
                     </Link>
                     <div className="favorite-types">
-                      {favorite.house.type} | {favorite.house.sqm}
+                      {favorite.house.sort} | {favorite.house.sqm}
                     </div>
                     <br/>
                     <div className="remove-fav" onClick={this.deleteFavorite(favorite.house.id)}>

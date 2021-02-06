@@ -65,7 +65,7 @@ class IndexItem extends React.Component{
                     {/* <span>{moneyCheck}</span> */}
                     <span>{house.price}</span>
                     <span>
-                      <i className="fas fa-utensils"></i> {house.type}
+                      <i className="fas fa-utensils"></i> {house.sort}
                     </span>
                     <span>
                       <i className="fas fa-map-marker-alt location-idx"></i>{" "}

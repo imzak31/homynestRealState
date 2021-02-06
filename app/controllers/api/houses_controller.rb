@@ -3,10 +3,10 @@ class Api::HousesController < ApplicationController
         if params[:search]     
             if params[:search][:bounds]        
                 @houses = House.in_bounds(params[:search][:bounds])
-            elsif params[:search][:city]
-                @houses = params[:search][:city] == [] ? 
+            elsif params[:search][:sort]
+                @houses = params[:search][:sort] == [] ? 
                     House.all : 
-                    House.where(city: params[:search][:city])
+                    House.where(sort: params[:search][:sort])
             else 
                  @houses = House.all
             end
@@ -15,8 +15,8 @@ class Api::HousesController < ApplicationController
                 @houses = @houses.where(:price => params[:search][:price])
             end
 
-            if params[:search][:types]
-                @houses = @houses.where(:type => params[:search][:types])
+            if params[:search][:sorts]
+                @houses = @houses.where(:sort => params[:search][:sorts])
             end
             
             # if params[:search][:name]

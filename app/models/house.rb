@@ -1,5 +1,5 @@
 class House < ApplicationRecord
-    validates :name, :address, :sqm, :state, :zip, :price,:type,:open_time,:close_time, :phone_number, :description, presence: true
+    validates :name, :address, :sqm, :state, :zip, :price,:sort,:open_time,:close_time, :phone_number, :description, presence: true
 
       #associations 
       has_many :reservations,
@@ -19,8 +19,8 @@ class House < ApplicationRecord
   
 
   def self.search_by_key(keyword)
-      House.where("lower(city) like ?", "%#{keyword.downcase}%")
-          .or(House.where("lower(type) like ?", "%#{keyword.downcase}%"))
+      House.where("lower(sqm) like ?", "%#{keyword.downcase}%")
+          .or(House.where("lower(sort) like ?", "%#{keyword.downcase}%"))
           .or(House.where("lower(name) like ?", "%#{keyword.downcase}%"))
           .or(House.where("price = ?", "#{keyword}"))
   end
