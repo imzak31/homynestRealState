@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hello everyone!
 
-Things you may want to cover:
+This is my Rails/React Assesment for Kasaz. 
 
-* Ruby version
+As any normal project over there, here we should use these commands:
 
-* System dependencies
+bundle install 
 
-* Configuration
+and 
 
-* Database creation
+yarn
 
-* Database initialization
+So we can install every dependency required by Rails/React.
 
-* How to run the test suite
+Then, clearly,
 
-* Services (job queues, cache servers, search engines, etc.)
+rails db:migrate
+rails db:seed
 
-* Deployment instructions
+The last one in case you want to populate the database.
 
-* ...
+I wanted to do a bit more about the original requirements, and I made a simple, really simple login method, so people can register and login to have special functions.
+
+You can rate a property and there is a sample form to reservate a visit. Thinking about as an app for house hunters to find a visit the house they want to have, using the filters required.
