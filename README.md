@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hello everyone!
 
-Things you may want to cover:
+This is my Rails/React Assesment for Kasaz. 
 
-* Ruby version
+As any normal project over there, here we should use these commands:
 
-* System dependencies
+bundle install 
 
-* Configuration
+and 
 
-* Database creation
+yarn
 
-* Database initialization
+So we can install every dependency required by Rails/React.
 
-* How to run the test suite
+Then, clearly,
 
-* Services (job queues, cache servers, search engines, etc.)
+rails db:migrate
+rails db:seed
 
-* Deployment instructions
+The last one in case you want to populate the database.
 
-* ...
+
