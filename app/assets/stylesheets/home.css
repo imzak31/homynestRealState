@@ -20,7 +20,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: linear-gradient(90deg,rgba(47,45,65,.7),rgba(47,45,65,.7)),url("https://seat-check-seeds.s3-us-west-1.amazonaws.com/Moongate_PChang_3118.jpg");
+    background-image: linear-gradient(90deg,rgba(47,45,65,.7),rgba(47,45,65,.7));
     background-position: 100%;
     background-repeat: no-repeat;
     background-size: cover;

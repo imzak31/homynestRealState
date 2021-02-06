@@ -17,6 +17,8 @@ gem 'webpacker', '~> 5.0'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
+gem 'bcrypt', '~> 3.1.7'
+gem 'jquery-rails'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
@@ -33,12 +35,20 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
+gem "figaro"
+
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 4.1.0'
   # Display performance information such as SQL time and flame graphs for each request in your browser.
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem 'rack-mini-profiler', '~> 2.0'
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'pry-rails'
+  gem 'annotate'
+  gem 'binding_of_caller'
+  gem 'better_errors'
 end
 
 group :test do
@@ -51,3 +61,4 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'coffee-rails'
