@@ -25,7 +25,7 @@ demo = User.create!(
 
 house1 = House.create!(
     name: "House One",
-    address: "1906 Van Ness Ave",
+    adress: "1906 Van Ness Ave",
     sqm: "50",
     state: "California",
     zip: "94109",
@@ -42,7 +42,7 @@ house1 = House.create!(
 
 house2 = House.create!(
     name: "House Two",
-    address: "5955 Melrose Ave",
+    adress: "5955 Melrose Ave",
     sqm: "150",
     state: "California",
     zip: "90038",
@@ -60,7 +60,7 @@ house2 = House.create!(
 
 house3 = House.create!(
     name: "House Three",
-    address: "3355 Las Vegas Blvd South",
+    adress: "3355 Las Vegas Blvd South",
     sqm: "100",
     state: "Nevada",
     zip: "89109",
@@ -78,7 +78,7 @@ house3 = House.create!(
 
 house4 = House.create!(
     name: "House Four",
-    address: "40 West 40th Street",
+    adress: "40 West 40th Street",
     sqm: "100",
     state: "New York",
     zip: "10018",
@@ -94,7 +94,7 @@ house4 = House.create!(
 
 house5 = House.create!(
     name: "House Five",
-    address: "25 Yerba Buena",
+    adress: "25 Yerba Buena",
     sqm: "200",
     state: "California",
     zip: "94103",
