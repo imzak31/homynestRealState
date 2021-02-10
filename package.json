@@ -9,6 +9,7 @@
     "@rails/webpacker": "5.2.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "coffee-loader": "^2.0.0",
+    "coffee-script": "^1.12.7",
     "coffeescript": "1.12.7",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
